@@ -1,0 +1,6 @@
+#!/bin/bash
+# Habilita extensiones necesarias (ejemplo para Voilà + widgets)
+set -euxo pipefail  # Detiene el script si hay errores
+
+jupyter serverextension enable voila --sys-prefix
+jupyter nbextension enable --py widgetsnbextension --sys-prefix
